@@ -1,0 +1,79 @@
+{
+  "type": "scaffold",
+  "args": {
+    "appBar": {
+      "type": "app_bar",
+      "args": {
+        "title": {
+          "type": "text",
+          "args": {
+            "text": "Images"
+          }
+        }
+      }
+    },
+    "body": {
+      "type": "set_value",
+      "args": {
+        "listSlider": {
+          "items": [
+            {
+              "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg"
+            },
+            {
+              "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/09/27/all-the-fruits-cut-whole.jpg.rend.hgtvcom.616.493.suffix/1632778035320.jpeg"
+            },
+            {
+              "image": "http://medilifefood.com/wp-content/uploads/2019/10/purepng.com-red-appleappleapplesfruitsweet-1701527180174lrnig.png"
+            },
+            {
+              "image": "https://nurserynisarga.in/wp-content/uploads/2021/08/Hot-climate-Apple.jpg"
+            },
+            {
+              "image": "https://chefsmandala.com/wp-content/uploads/2018/03/Apple-Green.jpg"
+            },
+            {
+              "image": "http://files.mysteryofiran.com/media-files/2021/09/1d62e4e3-wholesale-fresh-apple-fruit-organic-natural-red-yellow-1.jpg"
+            },
+            {
+              "image": "https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-2foodgroups_vegetables_detailfeature.jpg?sfvrsn=226f1bc7_6"
+            }
+          ]
+        },
+        "objectImage": {
+          "type": "container",
+          "args": {
+            "alignment": "center",
+            "margin": {
+              "left": 2.0,
+              "right": 2.0
+            },
+            "decoration": {
+              "color": "#6495ED",
+              "borderRadius": 10
+            }
+          },
+          "child": {
+            "type": "placeholder_network",
+            "args": {
+              "boxFit": "fitHeight",
+              "placeholderScale": 2.5,
+              "placeholder": "asset/image/carlooploading.gif",
+              "image": "${value['image']}"
+            }
+          }
+        }
+      },
+      "child": {
+        "type": "carousel_slider",
+        "args": {
+          "height": 300,
+          "initial_page": 0,
+          "autoPlay": true,
+          "viewportFraction": 1
+        },
+        "children": "${for_each(listSlider['items'],'objectImage')}"
+      }
+    }
+  }
+}

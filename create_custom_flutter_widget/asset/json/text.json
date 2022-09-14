@@ -1,0 +1,29 @@
+{
+  "type": "scaffold",
+  "args": {
+    "appBar": {
+      "type": "app_bar",
+      "args": {
+        "title": {
+          "type": "text",
+          "args": {
+            "text": "Customtext"
+          }
+        }
+      }
+    },
+    "body": {
+      "type": "center",
+      "child": {
+        "type": "demo_custom_text",
+        "args": {
+          "text": "Demo Text",
+          "style": {
+            "fontSize": 40,
+            "color": "00f"
+          }
+        }
+      }
+    }
+  }
+}

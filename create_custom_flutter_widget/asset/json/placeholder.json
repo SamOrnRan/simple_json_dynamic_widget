@@ -1,0 +1,26 @@
+{
+    "type": "scaffold",
+    "args": {
+        "appBar": {
+            "type": "app_bar",
+            "args": {
+                "title": {
+                    "type": "text",
+                    "args": {
+                        "text": "Placeholder Image"
+                    }
+                }
+            }
+        },
+        "body": {
+            "type": "center",
+            "child": {
+                "type": "placeholder_network",
+                "args": {
+                    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg",
+                    "placeholder": "asset/image/carlooploading.gif"
+                }
+            }
+        }
+    }
+}
