@@ -44,6 +44,8 @@
           "type": "container",
           "args": {
             "alignment": "center",
+            "width": "infinity",
+            "height": "infinity",
             "margin": {
               "left": 2.0,
               "right": 2.0
@@ -56,7 +58,7 @@
           "child": {
             "type": "placeholder_network",
             "args": {
-              "boxFit": "fitHeight",
+              "boxFit": "contain",
               "placeholderScale": 2.5,
               "placeholder": "asset/image/carlooploading.gif",
               "image": "${value['image']}"

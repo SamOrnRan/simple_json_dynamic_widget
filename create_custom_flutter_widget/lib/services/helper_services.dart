@@ -19,4 +19,9 @@ class HelperService {
     String root = await rootBundle.loadString('asset/json/placeholder.json');
     return jsonDecode(root);
   }
+
+  Future<Map> getWebview() async {
+    String root = await rootBundle.loadString('asset/json/web_view.json');
+    return json.decode(root);
+  }
 }
