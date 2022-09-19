@@ -45,27 +45,31 @@ class JsonPlaceHolderBuilder extends JsonWidgetBuilder {
   static JsonPlaceHolderBuilder? fromDynamic(dynamic map,
       {JsonWidgetRegistry? registry}) {
     JsonPlaceHolderBuilder? placeHolderBuilder;
-    placeHolderBuilder = JsonPlaceHolderBuilder(
-      image: map['image'].toString(),
-      placeholder: map['placeholder'].toString(),
-      boxFit: ThemeDecoder.decodeBoxFit(map['boxFit']),
-      errorImage: map['errorImage'].toString(),
-      imageCacheHeight: JsonClass.parseInt(map['imageCacheHeight']),
-      imageCacheWidth: JsonClass.parseInt(map['imageCacheWidth']),
-      imageScale: JsonClass.parseDouble(map['imageScale']),
-      imageSemanticLabel: map['imageSemanticLabel'].toString(),
-      excludeFromSemantics: JsonClass.parseBool(map['excludeFromSemantics']),
-      width: JsonClass.parseDouble(map['width']),
-      height: JsonClass.parseDouble(map['height']),
-      placeholderCacheHeight: JsonClass.parseInt(map['placeholderCacheHeight']),
-      placeholderCacheWidth: JsonClass.parseInt(map['placeholderCacheWidth']),
-      placeholderScale: JsonClass.parseDouble(map['placeholderScale']),
-      fadeInCurve: map['fadeInCurve'],
-      fadeOutCurve: map['fadeOutCurve'],
-      fadeInDuration: JsonClass.parseDurationFromMillis(map['fadeInDuration']),
-      fadeOutDuration:
-          JsonClass.parseDurationFromMillis(map['fadeOutDuration']),
-    );
+    if (map != null) {
+      placeHolderBuilder = JsonPlaceHolderBuilder(
+        image: map['image'].toString(),
+        placeholder: map['placeholder'].toString(),
+        boxFit: ThemeDecoder.decodeBoxFit(map['boxFit']),
+        errorImage: map['errorImage'].toString(),
+        imageCacheHeight: JsonClass.parseInt(map['imageCacheHeight']),
+        imageCacheWidth: JsonClass.parseInt(map['imageCacheWidth']),
+        imageScale: JsonClass.parseDouble(map['imageScale']),
+        imageSemanticLabel: map['imageSemanticLabel'].toString(),
+        excludeFromSemantics: JsonClass.parseBool(map['excludeFromSemantics']),
+        width: JsonClass.parseDouble(map['width']),
+        height: JsonClass.parseDouble(map['height']),
+        placeholderCacheHeight:
+            JsonClass.parseInt(map['placeholderCacheHeight']),
+        placeholderCacheWidth: JsonClass.parseInt(map['placeholderCacheWidth']),
+        placeholderScale: JsonClass.parseDouble(map['placeholderScale']),
+        fadeInCurve: map['fadeInCurve'],
+        fadeOutCurve: map['fadeOutCurve'],
+        fadeInDuration:
+            JsonClass.parseDurationFromMillis(map['fadeInDuration']),
+        fadeOutDuration:
+            JsonClass.parseDurationFromMillis(map['fadeOutDuration']),
+      );
+    }
 
     return placeHolderBuilder;
   }

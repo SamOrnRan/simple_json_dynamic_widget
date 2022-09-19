@@ -18,7 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<Map>(
-      future: HelperService().getWebview().then((value) => jsonMap = value),
+      future: HelperService().getPdf().then((value) => jsonMap = value),
       builder: (context, snap) {
         if (!snap.hasData) {
           return Container(

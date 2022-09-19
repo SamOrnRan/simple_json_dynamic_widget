@@ -43,6 +43,8 @@ dependencies:
   carousel_slider: ^4.1.1
   infinite_scroll_pagination: ^3.2.0
   flutter_pagewise: ^2.0.1
+  internet_file: ^1.2.0
+  pdfx: ^2.2.0
   # syncfusion_flutter_pdfviewer: ^20.2.49-beta
   
   
@@ -79,6 +81,7 @@ flutter:
     - asset/json/carousel_slider.json
     - asset/json/placeholder.json
     - asset/json/web_view.json
+    - asset/json/pdf_veiw.json
   
 
 
@@ -87,6 +90,9 @@ flutter:
     - asset/image/smal gif.gif
     - asset/image/carlaodingloop.gif
     - asset/image/carlooploading.gif
+    - asset/image/pdf-sample.pdf
+    - asset/image/khemer_eng.pdf
+    - asset/image/flutter-succinctly.pdf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

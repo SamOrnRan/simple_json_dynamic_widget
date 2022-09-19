@@ -1,6 +1,5 @@
 import 'package:create_custom_flutter_widget/registry_widget.dart';
 import 'package:create_custom_flutter_widget/test_json.dart';
-import 'package:create_custom_flutter_widget/widgets/pdf_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: PdfWidgetView(),
+      home: const MyHomePage(),
     );
   }
 }

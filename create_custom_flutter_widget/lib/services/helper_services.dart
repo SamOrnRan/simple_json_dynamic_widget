@@ -24,4 +24,9 @@ class HelperService {
     String root = await rootBundle.loadString('asset/json/web_view.json');
     return json.decode(root);
   }
+
+  Future<Map> getPdf() async {
+    String root = await rootBundle.loadString('asset/json/pdf_veiw.json');
+    return json.decode(root);
+  }
 }
