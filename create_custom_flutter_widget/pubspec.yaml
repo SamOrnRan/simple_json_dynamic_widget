@@ -45,7 +45,10 @@ dependencies:
   flutter_pagewise: ^2.0.1
   internet_file: ^1.2.0
   pdfx: ^2.2.0
-  # syncfusion_flutter_pdfviewer: ^20.2.49-beta
+  flutter_share: ^2.0.0
+  flutter_sms: ^2.3.3
+  fluttertoast: ^8.0.9
+  flutter_inappwebview: ^5.4.3+7
   
   
   
@@ -82,6 +85,7 @@ flutter:
     - asset/json/placeholder.json
     - asset/json/web_view.json
     - asset/json/pdf_veiw.json
+    - asset/json/dynamic_share.json
   
 
 

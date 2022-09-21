@@ -29,4 +29,10 @@ class HelperService {
     String root = await rootBundle.loadString('asset/json/pdf_veiw.json');
     return json.decode(root);
   }
+
+  Future<Map> getShare() async {
+    final String root =
+        await rootBundle.loadString('asset/json/dynamic_share.json');
+    return json.decode(root);
+  }
 }

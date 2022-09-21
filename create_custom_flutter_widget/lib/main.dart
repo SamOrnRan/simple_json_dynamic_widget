@@ -1,8 +1,10 @@
+import 'package:create_custom_flutter_widget/create_custom_widget/init_fuction/init_function.dart';
 import 'package:create_custom_flutter_widget/registry_widget.dart';
 import 'package:create_custom_flutter_widget/test_json.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  InitFuction().initFuction();
   AddNewWidgetToSchame().addSchema();
   runApp(const MyApp());
 }
